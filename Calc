@@ -1,26 +1,10 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-/*public class Main {
-Scanner in = new Scanner(System.in);
-//Calc calc1 = new Calc();
-String s = in.nextLine();
-}
-
-class Calc{
-    int namber1;
-    int namber2;
-    public static String calc(String input){
-
-        return input;
-    }
-}*/
 public class Main {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
-        //Scanner scan = new Scanner(" VII* VII  ");
-        //scan.useDelimiter("\n");
         while (scan.hasNextLine())
         {
             try {
@@ -60,101 +44,14 @@ public class Main {
         {
             ab = input.split("/");
         }
-            /*if ((ab[0]=="I") && (ab[1]=="I" ||ab[1]=="II"||ab[1]=="III"||ab[1]=="IV"||ab[1]=="V"||ab[1]=="VI"||ab[1]=="VII"||ab[1]=="VIII"||ab[1]=="IX"||ab[1]=="X"))
-                if (ab[1]=="I"){
-                    input ="II";
-                }
-
-                /*switch (ab[1]){
-                    case "I":
-                        input ="II";
-                        break;
-                    case "II":
-                        input ="III";
-                        break;
-                    }*/
-            /*int a = Integer.parseInt(ab[0].trim());
-            int b = Integer.parseInt(ab[1].trim());*/
-            /* if (Integer.parseInt(ab[0].trim())<=10 && Integer.parseInt(ab[1].trim())<=10 && Integer.parseInt(ab[0].trim())>=1 && Integer.parseInt(ab[1].trim())>=1) {
-                int pab = Integer.parseInt(ab[0].trim()) + Integer.parseInt(ab[1].trim());
-                input = Integer.toString(pab);
-            }*/
-        /*else
-        {
-            return "throws Exception";
-        }*/
 
         for (int i = 0; i<rom.length; i++) //1.1. Проверить является ли элементы римскими через сравнение
         {
             if(ab[0].trim().equals(rom[i]))
-            { a=i+1;
-                   /* if ((ab[0]=="I") && (ab[1]=="I" ||ab[1]=="II"||ab[1]=="III"||ab[1]=="IV"||ab[1]=="V"||ab[1]=="VI"||ab[1]=="VII"||ab[1]=="VIII"||ab[1]=="IX"||ab[1]=="X"))
-                        switch (ab[1]){
-                            case "I":
-                                input ="II";
-                            break;
-                            case "II":
-                                input ="III";
-                            break; */
+            {
+                a=i+1;
             }
-                  /* switch (ab[0]) {
-                        case "I":
-                            a = 1;
-                            break;
-                        case "II":
-                            a = 2;
-                            break;
-                        case "III":
-                            a = 3;
-                            break;
-                        case "IV":
-                            a = 4;
-                            break;
-                        case "V":
-                            a = 5;
-                            break;
-                        case "VI":
-                            a = 6;
-                            break;
-                        case "VII":
-                            a = 7;
-                            break;
-                        case "VIII":
-                            a = 8;
-                            break;
-                        case "IX":
-                            a = 9;
-                            break;
-                        case "X":
-                            a = 10;
-                            break;
-                        /*case 1:
-                            a = 1;
-                            break;
-                        case 2:
-                            a = 2;
-                            break;
-                        case 3:
-                            a = 3;
-                            break;
-                        case 4:
-                            a = 4;
-                            break;
-                        case 5:
-                            a = 5;
-                            break;
-                        case 6:
-                            a = 7;
-                            break;
-                        case 8:
-                            a = 8;
-                            break;
-                        case 9:
-                            a = 9;
-                            break;
-                        case 10:
-                            a = 10;
-                            break; */
+
             if(ab[1].trim().equals(rom[i]))
             {
                 b=i+1;
@@ -166,18 +63,6 @@ public class Main {
             b = Integer.parseInt(ab[1].trim());
             indicator =true;
         }
-            /*for (int i = 0; i<c.length; i++) //1.1. Проверить римский или арабский цифры
-            {
-                if(ab[0].trim().equals(c[i]))
-                {
-                    a = Integer.parseInt(ab[0].trim());
-                    b = Integer.parseInt(ab[1].trim());
-                    if (a<=10 && b<=10 && a>=1 && b>=1) {
-                        int pab = Integer.parseInt(ab[0].trim()) + Integer.parseInt(ab[1].trim());
-                        input = Integer.toString(pab);
-                    }
-                }
-            }*/
         if (a<=10 && b<=10 && a>=1 && b>=1) //1.3. Арифмитическая магия которую нужно вернуть (a(1)b)
         {
 
